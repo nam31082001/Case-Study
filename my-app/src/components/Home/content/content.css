@@ -1,0 +1,56 @@
+.content-full {
+  width: 100%;
+}
+.content-full h2 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.content-full .content-hello {
+  display: flex;
+}
+.content-full .content-hello div {
+  margin-left: 10%;
+  width: 20%;
+}
+.content-full .content-hello div p,
+.content-full .content-hello div h5 {
+  text-align: center;
+}
+.content-full .content-img {
+  margin-top: 2%;
+}
+.content-full .content-img h4 {
+  margin-top: 1%;
+  text-align: center;
+}
+.content-full .content-img .content-img-side {
+  margin: auto;
+  width: 90%;
+}
+.content-full .content-news h2 {
+  text-align: center;
+}
+.content-full .content-news .content-news-feature {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.content-full .content-news .content-news-feature .feature {
+  width: 50%;
+}
+.content-full .content-news .content-news-feature .feature p {
+  text-align: center;
+}
+.content-full .content-news .content-news-feature .feature p button {
+  width: 20%;
+  margin: 5%;
+}
+.content-full .content-news .content-news-feature .feature-img {
+  width: 50%;
+  text-align: center;
+}
+.content-full .content-Idea {
+  width: 90%;
+  margin: auto;
+}/*# sourceMappingURL=content.css.map */

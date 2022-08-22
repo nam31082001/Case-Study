@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  width: 100%;
+}
+.header .header-logo {
+  width: 20%;
+  text-align: center;
+}
+.header .header-menu {
+  width: 60%;
+}
+.header .header-menu a {
+  color: black;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.header .header-cart-login {
+  text-align: center;
+}/*# sourceMappingURL=header-generaj.css.map */

@@ -1,0 +1,72 @@
+.content-full {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .content-hello {
+        display: flex;
+
+        div {
+            margin-left: 10%;
+            width: 20%;
+
+            p,
+            h5 {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .content-img {
+        margin-top: 2%;
+
+        h4 {
+            margin-top: 1%;
+            text-align: center;
+        }
+
+        .content-img-side {
+            margin: auto;
+            width: 90%;
+        }
+    }
+
+    .content-news {
+        h2 {
+            text-align: center;
+        }
+
+        .content-news-feature {
+
+            width: 80%;
+            margin: auto;
+            display: flex;
+            
+
+            .feature {
+                width: 50%;
+                p {
+                    text-align: center;
+                    button{
+                        width: 20%;
+                        margin: 5%;
+                    }
+                }
+            }
+            .feature-img{
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+    .content-Idea{
+        width: 90%;
+        margin: auto;
+       
+    }
+}

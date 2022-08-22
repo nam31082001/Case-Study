@@ -1,0 +1,29 @@
+.detailItemFly {
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+
+  
+        .detailItemFly-img{
+            width: 40%;
+            border: 1px solid;
+            img{
+                width: 100%;
+                
+            }
+        }
+        .detailItemFly-news{
+            width: 40%;
+            margin-left: 3%;
+            input{
+                width: 20%;
+            }
+        }
+    
+}
+h3{
+    text-align: center;
+}
+
+

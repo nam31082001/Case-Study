@@ -1,0 +1,13 @@
+.product {
+  text-align: center;
+}
+.product div {
+  width: 20%;
+  margin: 1%;
+  display: inline-block;
+  text-align: center;
+}
+.product div img {
+  width: 90%;
+  height: 90%;
+}/*# sourceMappingURL=Product.css.map */

@@ -1,0 +1,271 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "SH7HD",
+      "price": "1250000",
+      "information": "Mô hình máy bay điều khiển giá rẻ chỉ 1tr250K nhưng sở hữu camera HD 1080P, nhỏ mà pin trâu cho thời gian bay lên đến 18 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-SH7HD-7.jpg"
+    },
+    {
+      "id": 2,
+      "name": "JJRC H68",
+      "price": "2000000",
+      "information": "Đóng gói tiện lợi trong thiết kế mini 4 cánh, đồng giá với SH7HD nhưng bay được tận 20 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-jjrc-h68.jpg"
+    },
+    {
+      "id": 3,
+      "name": "KY601S",
+      "price": "1350000",
+      "information": "Tích hợp Gyro 6 trục con quay chuyển hồi và động cơ không chổi than mạnh mẽ mà giá chỉ vỏn vẹn 1tr350K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-ky601s.jpg"
+    },
+    {
+      "id": 4,
+      "name": "VISUO XS812",
+      "price": "1900000",
+      "information": "Từng làm mưa làm gió một thời gian khi vừa ra mắt với thiết kế cánh gập, tích hợp đèn LED theo dõi chuyến bay, camera HD 2MP đang giảm còn 1tr990K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-VISUO-XS812.jpg"
+    },
+    {
+      "id": 5,
+      "name": "SJRC Z5",
+      "price": "2250000",
+      "information": "Mẫu drone giá rẻ 2tr250K có camera 1080P xoay được 90 độ, cánh gập tiện lợi, động cơ brushless hạn chế tiếng ồn, bay được 15 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-sjrc-z5.jpg"
+    },
+    {
+      "id": 6,
+      "name": " MJX Bugs 3H",
+      "price": "2350000",
+      "information": "Máy bay flycam mạnh mẽ kháng gió tương thích với các dòng action cam Eken, GoPro, SJCAM, pin dung lượng cao bay được 17 phút đang được khuyến mãi còn 2tr350K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-mjx-bugs-3h.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Syma X8 Pro",
+      "price": "2590000",
+      "information": "Với giá 2tr590K flycam trang bị GPS tự động quay về tránh tình huống bị lạc mất, camera chỉnh được góc xoay theo ý chủ nhân, thời gian ghi hình trên không khoảng 10 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-syma-x8-pro.jpg"
+    },
+    {
+      "id": 8,
+      "name": "SJRC S70W",
+      "price": "2590000",
+      "information": "Đồng giá với anh bạn phía trên nhưng có camera wifi 1080P chỉnh góc xoay được, ghi hình thoải mái khoảng 15 phút với nhiều chế độ thông minh.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-sjrc-s70w.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Hubsan F22",
+      "price": "2900000",
+      "information": "Ngoại hình độc đáo với chất liệu EPO, động cơ không chổi than mạnh mẽ bền bỉ, GPS, giữ độ cao ổn định, trải nghiệm được 10 phút cho một lần sạc đầy.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-hubsan-f22.jpg"
+    },
+    {
+      "id": 10,
+      "name": "DJI Tello",
+      "price": "2550000",
+      "information": "Từng cháy hàng với em này và hiện tại vẫn chưa hết hot với độ phân giải ảnh 5MPX, chống rung điện tử EIS cho ảnh có độ chi tiết cao, được treo giá mềm chỉ 2tr750K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-dji-tello.jpg"
+    },
+    {
+      "id": 11,
+      "name": "MJX Bugs 5W",
+      "price": "4050000",
+      "information": "Được cải tiến về chất lượng ghi hình với camera HD 1080P, gimbal 1 trục điều chỉnh góc 90 độ. Đặc biệt B5W sẽ phát ra chuông báo khi chuyến bay rơi vào vùng sóng nhiễu, tín hiệu yếu để bạn kịp thời kiểm soát.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-mjx-bugs-5w.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Syma W1",
+      "price": "2580000",
+      "information": "Tin được không giá bán 2tr850K mà sở hữu camera 1080P, FPV 5G Wifi, brushless motor, định vị GPS cùng các chế độ bay thông minh kèm theo. Ngoài ra, chế độ không đầu và lật 3D giải quyết vấn đề mất định hướng khi bay, phù hợp cho các anh em mới ra nghề.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-syma-w1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "MJX Bugs 2SE",
+      "price": "2990000",
+      "information": "Sự hoàn thiện trong dáng vóc của cá mập mạnh mẽ với brushless motor 1806 1800KV, camera 1080P sắc nét, Gyro 6 trục, tốc độ bay nhanh 60km/h, giao lưu trên không được khoảng 16-18 phút, được bán với giá rẻ rề 2tr990K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-mjx_bugs2SE.jpg"
+    },
+    {
+      "id": 14,
+      "name": "ZLRC Beast CSJ – X7",
+      "price": "5125000",
+      "information": "Tân binh mới nhưng khá nặng ký khi sở hữu diện mạo đắt tiền của Mavic Air cùng các thông số kỹ thuật khủng như camera góc rộng 4K 120 độ, tích hợp con quay 6 trục, độ phân giải ảnh và video cao, đặc biệt là pin cực trâu cho thời lượng bay lên tới 25 phút, có giá treo ngang sào với MJX B2SE.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-zlrc-beast-csj-x7.jpg"
+    },
+    {
+      "id": 15,
+      "name": "MJX Bugs 4W",
+      "price": "3350000",
+      "information": "Siêu phẩm ra đời làm lu mờ người tiền nhiệm B5W với thiết kế cánh gập hiện đại, camera 2K cùng gimbal 1 trục cho hình ảnh chất lượng cao, pin mạnh mẽ để chuyến bay dài 22 phút, cùng các tính năng bay thông minh khác. Giá hữu nghị chỉ 3tr350K",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-mjx-bugs-4w.jpg"
+    },
+    {
+      "id": 16,
+      "name": "SJRC F11 Pro",
+      "price": "6900000",
+      "information": "Đối thủ đáng gờm của B4W với giá chào sân ngang bằng, trang bị định vị 2 chế độ GPS/GLONASS, camera 2K ống kính 120 độ FOV cùng các chế độ bay thông minh cơ bản, năng lượng mạnh mẽ cho thời gian bay kéo dài 25 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-sjrc-f11-pro.jpg"
+    },
+    {
+      "id": 17,
+      "name": "JJRC X6 Aircus",
+      "price": "4500000",
+      "information": "Xuất hiện ở giữa năm 2019 nhưng tạo được sức hút đến các người chơi drone bởi diện mạo đắt giá trông hao hao DJI Phantom 4, thiết kế đèn LED 4 góc dễ theo dõi chuyến bay trong điều kiện thiếu ánh sáng, brushless motor mạnh mẽ và êm. Camera full HD 1080P và bay dài tới 20 phút. Ngân sách đặt ra để mua dòng flycam này chỉ khoảng 3tr650K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-jjrc-x6-aircus.jpg"
+    },
+    {
+      "id": 18,
+      "name": "JJPro X5",
+      "price": "4569800",
+      "information": "Thêm 100K so với X6 Aircus để sở hữu những ưu điểm và chế độ bay thông minh tương tự nhưng được thêm gimbal 1 trục có thể điều chỉnh góc 90 độ.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/Flycam-gia-re-JJPRO-X5.jpg"
+    },
+    {
+      "id": 19,
+      "name": "JJRC X11",
+      "price": "189097770",
+      "information": "Giá rẻ chỉ 3tr850 nhưng được xem là đối thủ của hàng khủng trong phân khúc flycam tầm trung Hubsan Zino, X11 có thiết kế gập gọn gàng, GPS, tự động trở về nhà, khoảng cách điều khiển xa tới 1.6km. Đặc biệt, camera 2K với góc ống kính 110 độ, bay dài 20 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-jjrc-x11.jpg"
+    },
+    {
+      "id": 20,
+      "name": "C-Fly Dream",
+      "price": "189097770",
+      "information": "Cực phẩm trong top 20 của bài viết này sở hữu giá chỉ hơn 4 triệu nhưng cho trải nghiệm chuyến bay thú vị với động cơ brushless, camera HD 1080P tích hợp gimbal chống rung 2 trục ổn định hình ảnh tốt, GPS tiên tiến cho các chế độ thông minh khác được tích hợp.",
+      "img": "https://wordpress.templatemela.com/woo/WCM02/WCM020030/WP1/wp-content/uploads/2014/05/drone2.png"
+    }
+  ],
+  "dataHomefly": [
+    {
+      "id": 1,
+      "img": "https://wordpress.templatemela.com/woo/WCM02/WCM020030/WP1/wp-content/uploads/2014/05/drone2.png"
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-2.jpg"
+    }
+  ],
+  "datacamera": [
+    {
+      "id": 21,
+      "name": "Fujifilm X-T200",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-2.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Máy ảnh Sony Alpha A6000",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-4.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "Fujifilm X-A7",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-5.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Canon EOS M50",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-6.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Máy Ảnh Cơ Nikon D5600",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-7.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Canon 800D",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-8.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Panasonic Lumix G100",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-9.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Máy Ảnh Cơ Nikon Z50",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-10.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Máy chụp hình Sony ZV-1",
+      "price": "10000000",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-11.jpg",
+      "information": " được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt."
+    },
+    {
+      "id": 30,
+      "name": "Olympus OM-D E-M10 Mark III",
+      "price": "10000000",
+      "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-3.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "SH7HD",
+      "price": "1250000",
+      "number": 12
+    }
+  ],
+  "FProduct": [
+    {
+      "id": 1,
+      "name": "SH7HD",
+      "price": "1250000",
+      "information": "Mô hình máy bay điều khiển giá rẻ chỉ 1tr250K nhưng sở hữu camera HD 1080P, nhỏ mà pin trâu cho thời gian bay lên đến 18 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-SH7HD-7.jpg"
+    },
+    {
+      "id": 2,
+      "name": "JJRC H68",
+      "price": "2000000",
+      "information": "Đóng gói tiện lợi trong thiết kế mini 4 cánh, đồng giá với SH7HD nhưng bay được tận 20 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-jjrc-h68.jpg"
+    },
+    {
+      "id": 3,
+      "name": "KY601S",
+      "price": "1350000",
+      "information": "Tích hợp Gyro 6 trục con quay chuyển hồi và động cơ không chổi than mạnh mẽ mà giá chỉ vỏn vẹn 1tr350K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-ky601s.jpg"
+    },
+    {
+      "id": 4,
+      "name": "VISUO XS812",
+      "price": "1900000",
+      "information": "Từng làm mưa làm gió một thời gian khi vừa ra mắt với thiết kế cánh gập, tích hợp đèn LED theo dõi chuyến bay, camera HD 2MP đang giảm còn 1tr990K.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-VISUO-XS812.jpg"
+    },
+    {
+      "id": 5,
+      "name": "SJRC Z5",
+      "price": "2250000",
+      "information": "Mẫu drone giá rẻ 2tr250K có camera 1080P xoay được 90 độ, cánh gập tiện lợi, động cơ brushless hạn chế tiếng ồn, bay được 15 phút.",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-sjrc-z5.jpg"
+    }
+  ]
+}
