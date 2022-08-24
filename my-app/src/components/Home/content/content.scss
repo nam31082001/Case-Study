@@ -1,3 +1,39 @@
+$mobile-width1: 200px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width1: 1100px;
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width1}) and (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin ipa {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width1 - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop1 {
+    @media (min-width: #{$desktop-width1}) {
+        @content;
+    }
+}
+
 .content-full {
     width: 100%;
 
@@ -9,6 +45,220 @@
 
     .content-hello {
         display: flex;
+
+        @include mobile() {
+            .content-hello-desktop {
+                display: none;
+            }
+
+            .content-hello-mobile {
+                width: 100%;
+                margin: 0px;
+
+
+                div {
+                    width: 100%;
+                    margin: 0px;
+                    display: flex;
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+
+                    .content-hello-mobile1 {
+                        width: 20%;
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+
+                    .content-hello-mobile2 {
+                        width: 80%;
+
+                        h5 {
+                            margin: auto;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+        @include tablet() {
+
+            .content-hello-desktop {
+                display: none;
+
+            }
+
+            .content-hello-mobile {
+                width: 100%;
+                margin: 0px;
+
+
+                div {
+                    width: 100%;
+                    margin: 0px;
+                    display: flex;
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+
+                    .content-hello-mobile1 {
+                        width: 20%;
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+
+                    .content-hello-mobile2 {
+                        width: 80%;
+
+                        h5 {
+                            margin: auto;
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+
+        @include ipa() {
+            .content-hello-desktop {
+                display: none;
+            }
+
+            .content-hello-mobile {
+                width: 100%;
+                margin: 0px;
+
+
+                div {
+                    width: 100%;
+                    margin: 0px;
+                    display: flex;
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+
+                    .content-hello-mobile1 {
+                        width: 20%;
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+
+                    .content-hello-mobile2 {
+                        width: 80%;
+
+                        h5 {
+                            margin: auto;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+        @include desktop() {
+
+            .content-hello-desktop {
+                display: none;
+
+            }
+
+            .content-hello-mobile {
+                width: 100%;
+                margin: 0px;
+
+
+                div {
+                    width: 100%;
+                    margin: 0px;
+                    display: flex;
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+
+                    .content-hello-mobile1 {
+                        width: 20%;
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+
+                    .content-hello-mobile2 {
+                        width: 80%;
+
+                        h5 {
+                            margin: auto;
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+
+        @include desktop1() {
+
+            .content-hello-desktop {
+                display: block;
+                width: 100%;
+                margin: 0px;
+                div {
+                    width: 100%;
+                    margin: 0px;
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+
+                    .content-hello-mobile1 {
+                        width: 30%;
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+
+                    .content-hello-mobile2 {
+                        width: 70%;
+
+                        h5 {
+                            margin: auto;
+                        }
+                    }
+
+                }
+            }
+
+            .content-hello-mobile {
+                display: none;
+
+
+
+
+
+
+            }
+
+
+
+        }
 
         div {
             margin-left: 10%;
@@ -28,6 +278,52 @@
         h4 {
             margin-top: 1%;
             text-align: center;
+
+            @include mobile() {
+                display: none;
+
+            }
+
+            @include ipa() {
+                display: none;
+
+            }
+
+            @include desktop() {
+                display: block;
+
+            }
+            @include desktop1() {
+                display: block;
+
+            }
+
+        }
+
+        h6 {
+            @include mobile() {
+
+                margin-left: 8%;
+            }
+
+            @include tablet() {
+                margin-left: 35%;
+                margin-top: 5%;
+            }
+
+            @include ipa() {
+                margin-left: 25%;
+                margin-top: 5%;
+            }
+
+            @include desktop() {
+                display: none;
+
+            }
+            @include desktop1() {
+                display: none;
+
+            }
         }
 
         .content-img-side {
@@ -46,27 +342,106 @@
             width: 80%;
             margin: auto;
             display: flex;
-            
+
+            @include mobile() {
+                display: block;
+            }
+
 
             .feature {
                 width: 50%;
+
+                @include mobile() {
+                    display: block;
+                    width: 100%;
+
+                }
+
+
                 p {
                     text-align: center;
-                    button{
+
+
+                    button {
+                        width: 20%;
+                        margin: 5%;
+                    }
+                }
+
+                @include tablet() {
+                    display: block;
+                    width: 100%;
+
+                }
+
+                @include ipa() {
+                    display: block;
+                    width: 100%;
+
+                    p {
+                        text-align: center;
+
+                        button {
+                            width: 20%;
+                            margin: 5%;
+                        }
+                    }
+
+                }
+
+
+                p {
+                    text-align: center;
+
+
+                    button {
                         width: 20%;
                         margin: 5%;
                     }
                 }
             }
-            .feature-img{
+
+            .feature-img {
                 width: 50%;
                 text-align: center;
+
+                @include mobile() {
+                    display: none;
+                }
+
+                @include tablet() {
+                    display: none;
+                }
+
+                @include ipa() {
+                    display: none;
+                }
             }
         }
     }
-    .content-Idea{
+
+    .content-Idea {
         width: 90%;
         margin: auto;
-       
+
+        @include mobile() {
+            div {
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+
+        @include tablet() {
+            div {
+                flex-direction: row;
+            }
+        }
+
+    }
+
+    @include mobile() {
+        .side-product-desktop {
+            display: none;
+        }
     }
 }

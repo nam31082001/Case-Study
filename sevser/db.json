@@ -153,84 +153,77 @@
   ],
   "datacamera": [
     {
-      "id": 21,
+      "id": 1,
       "name": "Fujifilm X-T200",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-2.jpg"
     },
     {
-      "id": 22,
+      "id": 2,
       "name": "Máy ảnh Sony Alpha A6000",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-4.jpeg"
     },
     {
-      "id": 23,
+      "id": 3,
       "name": "Fujifilm X-A7",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-5.jpg"
     },
     {
-      "id": 24,
+      "id": 4,
       "name": "Canon EOS M50",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-6.jpg"
     },
     {
-      "id": 25,
+      "id": 5,
       "name": "Máy Ảnh Cơ Nikon D5600",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-7.jpg"
     },
     {
-      "id": 26,
+      "id": 6,
       "name": "Canon 800D",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-8.jpg"
     },
     {
-      "id": 27,
+      "id": 7,
       "name": "Panasonic Lumix G100",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-9.jpg"
     },
     {
-      "id": 28,
+      "id": 8,
       "name": "Máy Ảnh Cơ Nikon Z50",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-10.jpg"
     },
     {
-      "id": 29,
+      "id": 9,
       "name": "Máy chụp hình Sony ZV-1",
       "price": "10000000",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-11.jpg",
       "information": " được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt."
     },
     {
-      "id": 30,
+      "id": 10,
       "name": "Olympus OM-D E-M10 Mark III",
       "price": "10000000",
       "information": "được xem là phiên bản nhỏ hơn, gọn hơn so với hai chiếc Full frame Z6 và Z7. Mặc dù vậy, máy vẫn cho cảm giác cầm nắm tốt, các thao tác điều khiển dễ dàng. Chiếc máy này trang bị cảm biến CMOS 20.9MP và chip xử lý hình ảnh EXPEED 6 nhằm mang lại hiệu suất tổng thể nhanh chóng. Dải ISO 100-51200 có thể mở rộng lên tới 204800, đi kèm với đó là khả năng khử nhiễu của máy rất tốt.",
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-3.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "name": "SH7HD",
-      "price": "1250000",
-      "number": 12
-    }
-  ],
+  "cart": [],
   "FProduct": [
     {
       "id": 1,

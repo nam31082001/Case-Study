@@ -5,4 +5,18 @@
 }
 .footer .footer-email {
   text-align: center;
+}
+@media (min-width: 200px) and (max-width: 1023px) {
+  .footer .footer-address div {
+    flex-direction: column;
+  }
+  .footer .footer-address div div {
+    margin: auto;
+  }
+  .footer .footer-address div div .card-body div {
+    margin: auto;
+  }
+  .footer .footer-address div div .card-body .card-text p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

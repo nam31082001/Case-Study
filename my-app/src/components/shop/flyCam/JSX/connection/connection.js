@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './Connenction.css'
 import { memo } from "react"
 import Example from '../Modal';

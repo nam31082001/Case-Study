@@ -19,6 +19,69 @@
   width: 20%;
 }
 
+@media (min-width: 200px) and (max-width: 479px) {
+  .detailItemFly {
+    display: none;
+  }
+  .detailItemFly-mobile img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .detailItemFly {
+    display: none;
+  }
+  .detailItemFly-mobile {
+    display: block;
+  }
+  .detailItemFly-mobile img {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .detailItemFly {
+    display: none;
+  }
+  .detailItemFly-mobile {
+    display: block;
+  }
+  .detailItemFly-mobile img {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1099px) {
+  .detailItemFly {
+    display: block;
+  }
+  .detailItemFly-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1100px) {
+  .detailItemFly {
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+  }
+  .detailItemFly .detailItemFly-img {
+    width: 40%;
+    border: 1px solid;
+  }
+  .detailItemFly .detailItemFly-img img {
+    width: 100%;
+  }
+  .detailItemFly .detailItemFly-news {
+    width: 40%;
+    margin-left: 3%;
+  }
+  .detailItemFly .detailItemFly-news input {
+    width: 20%;
+  }
+  .detailItemFly-mobile {
+    display: none;
+  }
+}
 h3 {
   text-align: center;
 }/*# sourceMappingURL=Detail.css.map */

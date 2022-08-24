@@ -1,0 +1,15 @@
+.notify{
+    width: 200px;
+    height: 100px;
+    background: rgb(156, 153, 153);
+    position: fixed;
+    top:45%;
+    left:40%;
+    opacity: 1;
+    animation: fade 2s linear;
+}
+@keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0.5 }
+    100% { opacity: 0 }
+  }

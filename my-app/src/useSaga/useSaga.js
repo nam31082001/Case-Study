@@ -14,9 +14,15 @@ import {
     PUT_NUMBER_CART_FLY_REDUCED,
     REDUCED_FLY,
     DELETE_CART_FLY,
-    DELETE_FLY
+    DELETE_FLY,
+    PUT_CHECKED_FLY,
+    PUT_FLY,
+    GET_PRODUCT_CAM,
+    GET_CAM,
+    GET_ITEM_CAM,
+    DATA_ITEM_CAM,
 } from "../redux/sctons";
-import { put, take, takeLatest } from 'redux-saga/effects'
+import { put, takeLatest } from 'redux-saga/effects'
 import axios from 'axios'
 
 function* api() {
@@ -153,6 +159,67 @@ function* deleteCartFly(action) {
 }
 
 
+function* putCheckedFly(action) {
+    try {
+        const data = action.payload
+        data.checked = !data.checked
+        let res = yield axios.put(`http://localhost:3000/cart/${action.payload.id}`, action.payload)
+        yield put(
+            {
+                type:PUT_FLY,
+                payload:res.data
+            }
+        )
+       
+
+    } catch (error) {
+        console.log("error - getUser : ", error);
+    }
+}
+
+
+
+
+
+
+// Cam
+
+
+function* getProductCam(){
+    console.log('a')
+    try {
+        const res = yield axios.get(`http://localhost:3000/datacamera`)
+        yield put(
+            {
+                type:GET_CAM,
+                payload:res.data
+            }
+        )
+       
+
+    } catch (error) {
+        console.log("error - getUser : ", error);
+    }
+}
+function* oneItemCam(action) {
+    const id = action.payload
+    try {
+        const res = yield axios.get(`http://localhost:3000/datacamera/${id}`)
+        yield put(
+            {
+                type: DATA_ITEM_CAM,
+                payload: res.data
+            }
+        )
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+
+
+
+
 
 export default function* rootSaga() {
     yield takeLatest(GET, api)
@@ -164,4 +231,7 @@ export default function* rootSaga() {
     yield takeLatest(PUT_NUMBER_CART_FLY, putNumberCartFly)
     yield takeLatest(PUT_NUMBER_CART_FLY_REDUCED, putNumberReduced)
     yield takeLatest(DELETE_CART_FLY, deleteCartFly)
+    yield takeLatest(PUT_CHECKED_FLY, putCheckedFly)
+   yield takeLatest (GET_PRODUCT_CAM,getProductCam)
+   yield takeLatest(GET_ITEM_CAM,oneItemCam)
 }

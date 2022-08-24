@@ -7,6 +7,11 @@
   display: inline-block;
   text-align: center;
 }
+@media (min-width: 200px) and (max-width: 1023px) {
+  .product div {
+    width: 40%;
+  }
+}
 .product div img {
   width: 90%;
   height: 90%;

@@ -1,0 +1,153 @@
+$mobile-width1: 200px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width1: 1100px;
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width1}) and (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin ipa {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width1 - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop1 {
+    @media (min-width: #{$desktop-width1}) {
+        @content;
+    }
+}
+
+
+@include mobile() {
+    .buyProduct {
+        .item {
+
+            img {
+                border: 1px solid;
+                width: 100%;
+            }
+
+            p {
+                margin: 1%;
+                text-align: center;
+            }
+        }
+
+    }
+    .buyProduct-desktop{
+        display: none;
+    }
+}
+
+@include ipa() {
+    .buyProduct {
+        .item {
+
+            img {
+                border: 1px solid;
+                width: 100%;
+            }
+
+            p {
+                margin: 1%;
+                text-align: center;
+            }
+        }
+
+    }
+    .buyProduct-desktop{
+        display: none;
+    }
+}
+@include tablet(){
+    .buyProduct{
+        display: none
+
+    }
+    .buyProduct-desktop{
+        width: 50%;
+        margin: auto;
+        .item{
+            display: flex;
+            .item-img{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+            .item-news{
+                width: 80%;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@include desktop(){
+    .buyProduct{
+        display: none
+
+    }
+    .buyProduct-desktop{
+        width: 50%;
+        margin: auto;
+        .item{
+            display: flex;
+            .item-img{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+            .item-news{
+                width: 80%;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@include desktop1(){
+    .buyProduct{
+        display: none
+
+    }
+    .buyProduct-desktop{
+        width: 50%;
+        margin: auto;
+        .item{
+            display: flex;
+            .item-img{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+            .item-news{
+                width: 80%;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

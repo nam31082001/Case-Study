@@ -1,20 +1,310 @@
 .header {
   display: flex;
   width: 100%;
+  background: linear-gradient(to right, #7A7FBA, #11C37C);
 }
 .header .header-logo {
   width: 20%;
   text-align: center;
 }
+@media (min-width: 200px) and (max-width: 479px) {
+  .header .header-logo img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .header-logo img {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header .header-logo img {
+    display: none;
+  }
+}
+.header .header-logo h1 {
+  margin-top: 2%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 .header .header-menu {
   width: 60%;
+}
+@media (min-width: 200px) and (max-width: 479px) {
+  .header .header-menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .header-menu {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header .header-menu {
+    display: none;
+  }
 }
 .header .header-menu a {
   color: black;
   text-decoration: none;
-  margin-left: 10%;
+  float: left;
+  margin-left: 9%;
   margin-top: 2%;
+  font-size: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1099px) {
+  .header .header-menu a {
+    margin-left: 8%;
+  }
 }
 .header .header-cart-login {
   text-align: center;
+  float: left;
+  margin-top: 1%;
+}
+@media (min-width: 200px) and (max-width: 479px) {
+  .header .header-cart-login {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .header-cart-login {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header .header-cart-login {
+    display: none;
+  }
+}
+.header .log {
+  position: fixed;
+  left: 80%;
+  top: 9%;
+}
+@media (min-width: 200px) and (max-width: 479px) {
+  .header .log {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .log {
+    display: none;
+  }
+}
+.header .log h6 {
+  margin: 0px;
+}
+.header .responsiveHeader {
+  display: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header .responsiveHeader {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: 1%;
+  }
+  .header .responsiveHeader .link {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: whitesmoke;
+    -webkit-animation: pulse 1.5s ease infinite alternate;
+            animation: pulse 1.5s ease infinite alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+  .header .responsiveHeader .link a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .responsiveHeader {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: 1%;
+  }
+  .header .responsiveHeader .link {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background: whitesmoke;
+    -webkit-animation: pulse 1.5s ease infinite alternate;
+            animation: pulse 1.5s ease infinite alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+  .header .responsiveHeader .link a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+  }
+}
+@media (min-width: 200px) and (max-width: 479px) {
+  .header .responsiveHeader {
+    display: flex;
+    margin-left: 60%;
+    float: right;
+  }
+  .header .responsiveHeader .link {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 90px;
+    background: whitesmoke;
+    -webkit-animation: pulse 1.5s ease infinite alternate;
+            animation: pulse 1.5s ease infinite alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: translate(50px, 0);
+    }
+    15% {
+      transform: translate(35px, 0);
+    }
+    25% {
+      transform: translate(25px, 0);
+    }
+    35% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(15px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
 }/*# sourceMappingURL=header-generaj.css.map */

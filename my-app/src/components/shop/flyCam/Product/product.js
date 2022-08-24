@@ -1,10 +1,10 @@
 
-import { useEffect, useState,useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-
+import TypeOne from '../Type1/type1';
+import TypeTwo from '../JSX/Type2/type2';
 import Paging from '../../../Paging/Paging';
-import Example from '../JSX/Modal';
+import TypeAll from '../JSX/TyptAll/typeAll';
 import './Product.css'
 
 
@@ -12,13 +12,15 @@ import './Product.css'
 const Product = () => {
     const [handleFull, setHandleFull] = useState(true)
     const [search, setSearch] = useState('')
-   
+    const [type, setType] = useState('All')
+    const [checkNotify,setCheckNotify]=useState(false)
+
 
     // lấy dữ liệu từ redux
     const dispatch = useDispatch()
     const data = useSelector(state => state.dataFlyCam)
-    const dataCart = useSelector(state => state.cart)
-    console.log(dataCart)
+
+
 
 
 
@@ -47,14 +49,21 @@ const Product = () => {
             id: job.id,
             name: job.name,
             price: job.price,
+            img:job.img,
+            checked: false,
             number: 1
         }
+        console.log(data)
         dispatch(
             {
                 type: "POST_API_CART",
                 payload: data
             }
         )
+        setCheckNotify(true)
+        setTimeout(() => {
+            setCheckNotify(false)
+        }, 2000);
     }
 
 
@@ -66,7 +75,17 @@ const Product = () => {
             }
         )
     }, [])
- 
+    const handleTypeOne = () => {
+        setType('typeOne')
+    }
+    const handleTypeTwo = () => {
+        setType('typeTwo')
+    }
+    const handleTypeAll = () => {
+        setType('All')
+        setHandleFull(false)
+    }
+
 
     return (
         <>
@@ -77,66 +96,40 @@ const Product = () => {
                         placeholder='Lọc Sản Phẩm ...'
                         onChange={(event) => setSearch(event.target.value)}
 
-                    />
+                    /> <br /><br />
+                    <input type="radio" name="product" onClick={() => handleTypeOne()} /> Loại A &nbsp; &nbsp;
+                    <input type="radio" name="product" onClick={() => handleTypeTwo()} /> Loại B &nbsp; &nbsp;
+                    <input type="radio" name="product" onClick={() => handleTypeAll()} /> ALL
                 </p>
-                {handleFull ?
-                    <>
-                        {currentPostsProduct.filter((item) => {
-                            if (search === '') {
-                                return item
-                            } else if (item.name.toLowerCase().includes(search.toLowerCase()) || item.price.toLowerCase().includes(search.toLowerCase())) {
-                                return item
-                            }
-                        }).map(item => {
-                            return (
-                                <div>
-                                    <img src={item.img} alt="abc" />
-                                    <h4>{item.name}</h4>
-                                    <p>{item.price}</p>
-                                    <button  onClick={() => handleAddFly(item)}>Thêm Vào Giỏ</button> &nbsp;
-                                    <Example item={item} />
-                                    <br />
-                                    <button ><Link to={`/flycam/${item.id}`}> Chi Tiết </Link></button><br />
-                                    <spam>Thích</spam>
-                                    <p>Lượt Mua:</p>
-                                </div>
-                            )
-                        })}
 
-                    </>
-                    :
-                    <>
-                        {data.filter((item) => {
-                            if (search === '') {
-                                return item
-                            } else if (item.name.toLowerCase().includes(search.toLowerCase()) || item.price.toLowerCase().includes(search.toLowerCase())) {
-                                return item
-                            }
-                        }).map(item => {
-                            return (
-                                <div>
-                                    <img src={item.img} alt="abc" />
-                                    <h4>{item.name}</h4>
-                                    <p>{item.price}</p>
-                                    <button  onClick={() => handleAddFly(item)}>Thêm Vào Giỏ</button> &nbsp;
-                                    <Example item={item} />
-                                    <button ><Link to={`/flycam/${item.id}`}> Chi Tiết </Link></button><br />
-                                    <spam>Thích</spam>
-                                    <p>Lượt Mua:</p>
-                                </div>
-                            )
-                        })}
-                    </>
-                }
+
+                {type === 'typeOne' && <TypeOne handleAddFly={handleAddFly} checkNotify={checkNotify}/>}
+                {type === 'typeTwo' && <TypeTwo handleAddFly={handleAddFly} checkNotify={checkNotify}/>}
+
+                {type === 'All' && <TypeAll
+                    handleFull={handleFull}
+                    currentPostsProduct={currentPostsProduct}
+                    handleAddFly={handleAddFly}
+                    data={data}
+                    search={search}
+                    checkNotify={checkNotify}
+                />}
+
+
             </div><br />
-            <Paging
-                paging={pagingProduct}
-                arrNumber={pagProduct}
+            {type === 'All' &&
+                <>
+                    <Paging
+                        paging={pagingProduct}
+                        arrNumber={pagProduct}
 
-            />
-            <button onClick={() => handleClickFull()}>
-                {handleFull ? 'Xem Tất Cả' : 'Ẩn Bớt'}
-            </button>
+                    />
+                    <button onClick={() => handleClickFull()}>
+                        {handleFull ? 'Xem Tất Cả' : 'Ẩn Bớt'}
+                    </button>
+                </>
+            }
+
 
         </>
 

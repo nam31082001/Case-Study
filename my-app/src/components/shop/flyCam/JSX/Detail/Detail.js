@@ -9,7 +9,7 @@ import Example from "../Modal";
 
 
 const Detail = () => {
-    
+
     const [number, setNumber] = useState('1')
     const { id } = useParams()
     const dispatch = useDispatch()
@@ -39,8 +39,8 @@ const Detail = () => {
                 payload: data
             }
         )
-       
-      
+
+
     }
     return (
         <>
@@ -55,10 +55,20 @@ const Detail = () => {
                     <p>Thông tin Sản Phẩm:{data.information}</p>
                     <span>Số Lương  mua <input type="number" value={number} onChange={(e) => setNumber(e.target.value)} /></span><br /><br /><br />
                     <button onClick={() => handleClickDetail(data)}>Thêm Vào Giỏ Hàng</button>
-                    <Example item={data}/>
+                    <Example item={data} />
                 </div>
 
             </div>
+            <div className="detailItemFly-mobile">
+                <h1> Sản Phẩm:{data.name}</h1><br />
+                <img src={data.img} alt="abc" />
+                <h3> Giá Sản Phẩm:{data.price} VND</h3>
+                <p>Thông tin Sản Phẩm:{data.information}</p>
+                <span>Số Lương  mua <input type="number" value={number} onChange={(e) => setNumber(e.target.value)} /></span><br /><br /><br />
+                <button onClick={() => handleClickDetail(data)}>Thêm Vào Giỏ Hàng</button><br /><br />
+                <Example item={data} />
+            </div>
+            <br />
             <h3> Sản Phẩm Liên Quan</h3>
             <Connenction />
         </>

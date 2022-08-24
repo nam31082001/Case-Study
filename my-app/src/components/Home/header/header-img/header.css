@@ -3,4 +3,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 99vh;
+  top: -90px;
+}
+@media (min-width: 200px) and (max-width: 1023px) {
+  .header-full {
+    background-size: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-full {
+    background-size: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .header-full {
+    background-size: 100%;
+    height: 300px;
+  }
 }/*# sourceMappingURL=header.css.map */

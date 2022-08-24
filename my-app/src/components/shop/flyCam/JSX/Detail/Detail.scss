@@ -1,29 +1,150 @@
+$mobile-width1: 200px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width1: 1100px;
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width1}) and (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin ipa {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width1 - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop1 {
+    @media (min-width: #{$desktop-width1}) {
+        @content;
+    }
+}
+
+
 .detailItemFly {
     width: 90%;
     margin: auto;
     margin-top: 2%;
     display: flex;
 
-  
-        .detailItemFly-img{
+    .detailItemFly-img {
+        width: 40%;
+        border: 1px solid;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .detailItemFly-news {
+        width: 40%;
+        margin-left: 3%;
+
+        input {
+            width: 20%;
+        }
+    }
+
+}
+
+@include mobile() {
+    .detailItemFly {
+        display: none;
+    }
+
+    .detailItemFly-mobile {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include tablet() {
+    .detailItemFly {
+        display: none;
+    }
+
+    .detailItemFly-mobile {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include ipa() {
+    .detailItemFly {
+        display: none;
+    }
+
+    .detailItemFly-mobile {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include desktop() {
+    .detailItemFly {
+        display: block;
+    }
+
+    .detailItemFly-mobile {
+        display: none;
+    }
+}
+
+@include desktop1() {
+    .detailItemFly {
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        display: flex;
+        .detailItemFly-img {
             width: 40%;
             border: 1px solid;
-            img{
+    
+            img {
                 width: 100%;
-                
-            }
-        }
-        .detailItemFly-news{
-            width: 40%;
-            margin-left: 3%;
-            input{
-                width: 20%;
+    
             }
         }
     
+        .detailItemFly-news {
+            width: 40%;
+            margin-left: 3%;
+    
+            input {
+                width: 20%;
+            }
+        }
+    }
+
+    .detailItemFly-mobile {
+        display: none;
+    }
 }
-h3{
+
+
+
+h3 {
     text-align: center;
 }
-
-

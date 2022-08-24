@@ -32,20 +32,19 @@ const Featured_Product = () => {
 
 
     return (
-        <div style={{ width: '800px', margin: 'auto' }}>
+        <>
+        <div style={{ width:'100', margin: 'auto' }} className="side-product-desktop">
             <Carousel variant="dark">
                 {dataNew.map((item, index) => {
                     return (
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-99"
                                 src={item.img}
                                 alt="First slide"
-                            //    style={{height:'400px'}}
                             />
                             <Carousel.Caption>
-                                <h5>{item.name}</h5>
-                                <p>{item.information}</p>
+                                <h5 >{item.name}</h5>
                                 <h3>{item.price}</h3>
                                 <Example item={item} />
                                 <button  onClick={() => handleAddFly(item)}>Thêm Vào Giỏ</button>
@@ -55,6 +54,7 @@ const Featured_Product = () => {
                 })}
             </Carousel>
         </div>
+        </>
     )
 }
 export default Featured_Product

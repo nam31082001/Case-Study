@@ -1,14 +1,30 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from "react-router-dom";
+import { checkLogIn } from '../../../../redux/sctons';
+
 
 const Example = ({ item }) => {
   const [show, setShow] = useState(false);
   const [number, setNumber] = useState('1')
+  const checkLog = useSelector(state => state.checkLog)
+  const history = useHistory()
+  const dispatch = useDispatch()
+
+
+
   const orderProduct = () => {
-    setNumber('1')
-    alert('oke order thành công',parseInt(item.price) * number)
-    setShow(false)
+    if (!checkLog) {
+      alert("Vui Lòng Dăng Nhập")
+      history.push("/login")
+      dispatch(checkLogIn())
+    } else {
+      setNumber('1')
+      alert('oke order thành công', parseInt(item.price) * number)
+      setShow(false)
+    }
   }
 
 
@@ -18,7 +34,7 @@ const Example = ({ item }) => {
         Mua Luôn
       </Button>
 
-       <Modal
+      <Modal
         show={show}
         onHide={() => setShow(false)}
         dialogClassName="modal-90w"

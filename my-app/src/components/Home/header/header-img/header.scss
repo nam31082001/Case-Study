@@ -1,6 +1,43 @@
+$mobile-width1: 200px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width1}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+@mixin ipa {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+
+
 .header-full {
     background-image: url('https://cdn.vjshop.vn/tin-tuc/meo-chup-anh-bang-flycam/meo-chup-anh-bang-flycam-14.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 99vh;
+    top:-90px;
+    @include mobile() {
+        background-size: 100%;
+        height: 200px;
+    }
+    @include tablet(){
+        background-size: 100%;
+        height: 400px;
+    }
+    @include ipa(){
+        background-size: 100%;
+        height: 300px;
+    }
 }
