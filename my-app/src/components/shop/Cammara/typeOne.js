@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Example from '../flyCam/JSX/Modal';
 import Notify from '../../notify/notify';
-const TypeOneCam = (handleAddFly,checkNotify) => {
+const TypeOneCam = ({handleAddFly,checkNotify}) => {
     const dataCam = useSelector(state => state.dataCam)
 
     let arrType1 = []
@@ -16,7 +16,6 @@ const TypeOneCam = (handleAddFly,checkNotify) => {
     return (
         <>
         {checkNotify && <Notify/>}
-
             {arrType1.map(data => {
                 return (
                     <div>

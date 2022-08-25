@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Example from '../flyCam/JSX/Modal';
 import Notify from '../../notify/notify';

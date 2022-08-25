@@ -76,6 +76,7 @@ const ProductCam = () => {
     }, [])
     const handleTypeOne = () => {
         setType('typeOne')
+       
     }
     const handleTypeTwo = () => {
         setType('typeTwo')

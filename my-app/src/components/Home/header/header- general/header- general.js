@@ -28,6 +28,12 @@ const Header_General = () => {
     }, [])
 
 
+    const handleLogOut=()=>{
+        setCheckTF(!checkTF)
+        dispatch(checkLogOut())
+    }
+
+
 
     return (
         <div className='header'>
@@ -72,7 +78,7 @@ const Header_General = () => {
                         <>
                             <Link to="/Information"  onClick={() => setCheckTF(!checkTF)}>Thông Tin Cá Nhân</Link>
                             <hr />
-                            <Link to="/" onClick={() => dispatch(checkLogOut())}>Đăng xuất</Link>
+                            <Link to="/" onClick={() => handleLogOut()}>Đăng xuất</Link>
                         </>
                     }
                 </h6>
@@ -102,7 +108,7 @@ const Header_General = () => {
                             :
                             <>
                                 &nbsp;  <Link to="/Information"  onClick={() => setCheckTF(!checkTF)}>Thông Tin </Link> &nbsp; &nbsp;
-                                <Link to="/" onClick={() => dispatch(checkLogOut())}  onClick={() => setCheckTF(!checkTF)}>Đăng xuất</Link>
+                                <Link to="/" onClick={() => handleLogOut()}>Đăng xuất</Link>
                             </>
                         }
 
