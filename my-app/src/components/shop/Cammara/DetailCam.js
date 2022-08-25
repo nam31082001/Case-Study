@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from "react";
+import Notify from "../../notify/notify";
 
 import ConnenctionCam from './connectionCam'
 
@@ -12,6 +13,7 @@ import Example from "../flyCam/JSX/Modal";
 const DetailCam = () => {
 
     const [number, setNumber] = useState('1')
+    const [checkNotify, setCheckNotify] = useState(false)
     const { id } = useParams()
     const dispatch = useDispatch()
     const data = useSelector(state => state.detailItemCam)
@@ -40,13 +42,17 @@ const DetailCam = () => {
                 payload: data
             }
         )
+        setCheckNotify(true)
+        setTimeout(() => {
+            setCheckNotify(false)
+        }, 2000);
 
 
     }
     return (
         <>
             <div className="detailItemFly">
-
+                {checkNotify && <Notify />}
                 <div className="detailItemFly-img">
                     <img src={data.img} alt="abc" />
                 </div>
@@ -61,7 +67,7 @@ const DetailCam = () => {
 
             </div>
             <div className="detailItemFly-mobile">
-
+                {checkNotify && <Notify />}
                 <h1> Tên sản Phẩm:{data.name}</h1><br />
                 <img src={data.img} alt="abc" />
 

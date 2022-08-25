@@ -64,13 +64,13 @@ const Header_General = () => {
                 <h6>
                     {checkLog === false ?
                         <>
-                            <h6><Link to="/login">Đăng Nhập</Link></h6>
+                            <h6><Link to="/login"  onClick={() => setCheckTF(!checkTF)}>Đăng Nhập</Link></h6>
                             <hr />
-                            <Link to="/logout">Tạo Tài Khoản</Link>
+                            <Link to="/logout"  onClick={() => setCheckTF(!checkTF)}>Tạo Tài Khoản</Link>
                         </>
                         :
                         <>
-                            <Link to="/">Thông Tin Cá Nhân</Link>
+                            <Link to="/Information"  onClick={() => setCheckTF(!checkTF)}>Thông Tin Cá Nhân</Link>
                             <hr />
                             <Link to="/" onClick={() => dispatch(checkLogOut())}>Đăng xuất</Link>
                         </>
@@ -96,13 +96,13 @@ const Header_General = () => {
                         &nbsp;    <NavLink to="/phone" activeClassName="selected" onClick={()=>setLink(false)}> Liên hệ</NavLink><br />
                         {checkLog === false ?
                             <>
-                                <Link to="/login">Đăng Nhập</Link>   &nbsp;  &nbsp;
-                                &nbsp;  <Link to="/logout">Tạo Tài Khoản</Link>
+                                <Link to="/login"  onClick={() => setCheckTF(!checkTF)}>Đăng Nhập</Link>   &nbsp;  &nbsp;
+                                &nbsp;  <Link to="/logout"  onClick={() => setCheckTF(!checkTF)}>Tạo Tài Khoản</Link>
                             </>
                             :
                             <>
-                                &nbsp;  <Link to="/">Thông Tin </Link> &nbsp; &nbsp;
-                                <Link to="/" onClick={() => dispatch(checkLogOut())}>Đăng xuất</Link>
+                                &nbsp;  <Link to="/Information"  onClick={() => setCheckTF(!checkTF)}>Thông Tin </Link> &nbsp; &nbsp;
+                                <Link to="/" onClick={() => dispatch(checkLogOut())}  onClick={() => setCheckTF(!checkTF)}>Đăng xuất</Link>
                             </>
                         }
 

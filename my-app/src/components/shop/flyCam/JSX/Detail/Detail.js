@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import './Detail.css'
 import Connenction from "../connection/connection";
 import Example from "../Modal";
+import Notify from "../../../../notify/notify";
+
 
 
 
@@ -11,6 +13,7 @@ import Example from "../Modal";
 const Detail = () => {
 
     const [number, setNumber] = useState('1')
+    const [checkNotify,setCheckNotify]=useState(false)
     const { id } = useParams()
     const dispatch = useDispatch()
     const data = useSelector(state => state.detailItem)
@@ -39,13 +42,17 @@ const Detail = () => {
                 payload: data
             }
         )
+        setCheckNotify(true)
+        setTimeout(() => {
+            setCheckNotify(false)
+        }, 2000);
 
 
     }
     return (
         <>
             <div className="detailItemFly">
-
+            {checkNotify && <Notify />}
                 <div className="detailItemFly-img">
                     <img src={data.img} alt="abc" />
                 </div>
@@ -60,6 +67,7 @@ const Detail = () => {
 
             </div>
             <div className="detailItemFly-mobile">
+            {checkNotify && <Notify />}
                 <h1> Sản Phẩm:{data.name}</h1><br />
                 <img src={data.img} alt="abc" />
                 <h3> Giá Sản Phẩm:{data.price} VND</h3>

@@ -15,7 +15,9 @@ import {
    ADD_ADDRESS,
    PUT_ADDRESS,
    DELETE_ADDRESS,
-   DELETE_PRODUCT_BUY
+   DELETE_PRODUCT_BUY,
+   DELETE_CHECK,
+   HISTORY_BUY
 
 
 } from "./sctons"
@@ -35,7 +37,10 @@ const initialState = {
       { id: 3, numberHome: "Số Nhà 242", district: "Hoàng Mai", city: "Hà Nội", check: false },
       { id: 4, numberHome: "Số Nhà 228", district: "Hai Bà Trưng", city: "Hà Nội", check: false },
    ],
-   checkItem: ""
+   checkItem: "",
+
+
+   historyBuy:[]
 }
 const rootReducer = (state = initialState, action) => {
    switch (action.type) {
@@ -129,8 +134,6 @@ const rootReducer = (state = initialState, action) => {
          }
 
 
-
-
       case BUY_PRODUCT:
          return {
             ...state,
@@ -157,10 +160,35 @@ const rootReducer = (state = initialState, action) => {
          }
 
       case DELETE_PRODUCT_BUY:
+         let CopyAddressChecked=[...state.address]
+         CopyAddressChecked.map(item=>{
+            if(item.check===true){
+               item.check=false
+            }
+         })
          return {
             ...state,
-            cart: state.cart.filter(item => item.checked !== true)
+            cart: state.cart.filter(item => item.checked !== true),
+            address:CopyAddressChecked
          }
+         case DELETE_CHECK:
+            let CopyAddressChecked1=[...state.address]
+            CopyAddressChecked1.map(item=>{
+            if(item.check===true){
+               item.check=false
+            }
+         })
+         return{
+            ...state,
+            address:CopyAddressChecked1
+         }
+
+
+         case HISTORY_BUY:
+            return{
+               ...state,
+               historyBuy:action.payload
+            }
          
       default:
          return state

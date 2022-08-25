@@ -5,17 +5,11 @@ import { putAddress, deleteAddress } from '../../redux/sctons'
 
 
 
-const Address = () => {
+const Address = ({handleCheckBox,handelDelete}) => {
     const dispatch = useDispatch()
     const [addaddress, setAddaddress] = useState(false)
     const address = useSelector(state => state.address)
 
-    const handleCheckBox = (job) => {
-        dispatch(putAddress(job))
-    }
-    const handelDelete = (job) => {
-        dispatch(deleteAddress(job))
-    }
 
     return (
         <div className="address">

@@ -303,9 +303,4 @@
   .content-full .content-Idea div {
     flex-direction: row;
   }
-}
-@media (min-width: 200px) and (max-width: 479px) {
-  .content-full .side-product-desktop {
-    display: none;
-  }
 }/*# sourceMappingURL=content.css.map */

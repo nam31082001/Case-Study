@@ -33,18 +33,34 @@ export const PUT_ADDRESS = 'PUT_ADDRESS'
 export const DELETE_ADDRESS = ' DELETE_ADDRESS'
 
 
-export const DELETE_PRODUCT_BUY=' DELETE_PRODUCT_BUY'
+export const DELETE_PRODUCT_BUY = ' DELETE_PRODUCT_BUY'
+
+
+export const DELETE_CHECK = 'DELETE_CHECK'
+
+export const HISTORY_BUY = ' HISTORY_BUY'
 
 
 
 
 
-  
 
 
-export const deleteProductBuy=()=>(
+
+export const historyBuy = (data) => (
     {
-        type:DELETE_PRODUCT_BUY
+        type: HISTORY_BUY,
+        payload: data
+    }
+)
+export const deleteCheck = () => (
+    {
+        type: DELETE_CHECK
+    }
+)
+export const deleteProductBuy = () => (
+    {
+        type: DELETE_PRODUCT_BUY
     }
 )
 export const deleteAddress = (data) => (

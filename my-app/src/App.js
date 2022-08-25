@@ -15,6 +15,7 @@ import DetailCam from "./components/shop/Cammara/DetailCam";
 import Login from "./components/Login/Log in/login";
 import LogOut from "./components/Login/Log out/logOut";
 import BuyProduct from "./components/BuyProduct/buyProduct";
+import Information from "./components/personalInformation/ilnformation";
 
 function App() {
 
@@ -85,6 +86,11 @@ function App() {
           <Route path="/buyProduct">
             <Header_General />
             <BuyProduct />
+          </Route>
+          <Route path="/Information">
+            <Header_General />
+            <Information/>
+            <Footer />
           </Route>
 
         </Switch>

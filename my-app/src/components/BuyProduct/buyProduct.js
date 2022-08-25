@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Address from '../address/Address'
 import './buyProduct.css'
 import {useHistory} from 'react-router-dom'
-import { deleteProductBuy } from '../../redux/sctons'
+import { deleteAddress, deleteProductBuy,historyBuy, putAddress } from '../../redux/sctons'
 
 const BuyProduct = () => {
     const [address, setAddress] = useState(false)
@@ -23,12 +23,24 @@ const BuyProduct = () => {
             count = count + 1
         }
     })
+
+    const handleCheckBox = (job) => {
+        dispatch(putAddress(job))
+    }
+    const handelDelete = (job) => {
+        dispatch(deleteAddress(job))
+    }
     console.log(count)
     const handleBuyProduct = () => {
         if (count === 1) {
+            
             alert("thàng công")
-            history.push("/")
+            history.push("/Information")
+            dispatch(historyBuy(data))
             dispatch(deleteProductBuy())
+            
+           
+
         } else if (count > 1) {
             alert("mỗi lần đặt chỉ dược 1 địa chỉ")
         } else {
@@ -53,7 +65,7 @@ const BuyProduct = () => {
                     )
                 })}
                 Tổng:{total} VND <br /><button onClick={() => setAddress(!address)}>Địa Chỉ</button>
-                {address && <Address />}<br /><hr />
+                {address && <Address handelDelete={handelDelete} handleCheckBox={handleCheckBox}/>}<br /><hr />
 
                 <button onClick={() => handleBuyProduct()}>Mua Hàng</button>
 
@@ -77,7 +89,7 @@ const BuyProduct = () => {
                     )
                 })}
                 Tổng:{total} VND <br /><button onClick={() => setAddress(!address)}>Địa Chỉ</button>
-                {address && <Address />}<br /><hr />
+                {address && <Address handelDelete={handelDelete} handleCheckBox={handleCheckBox}/>}<br /><hr />
 
                 <button onClick={() => handleBuyProduct()}>Mua Hàng</button>
 

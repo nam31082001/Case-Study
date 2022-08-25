@@ -1,0 +1,130 @@
+$mobile-width1: 200px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width1: 1100px;
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width1}) and (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin ipa {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width1 - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop1 {
+    @media (min-width: #{$desktop-width1}) {
+        @content;
+    }
+}
+
+
+.side-product-desktop{
+    width: 50%;
+    margin: auto;
+    .carousel-item{
+        img{
+            margin-left: 20%;
+            display: block;
+            width: 200px;
+        };
+        .carousel-caption{
+            width: 50%;
+            margin-left:30%
+        }
+    }
+}
+@include mobile(){
+    .side-product-desktop{
+        width: 100%;
+       
+        .carousel-item{
+            
+        
+            .carousel-caption{
+                display: none;
+            }
+        }
+    }
+   
+}
+@include ipa(){
+    .side-product-desktop{
+        width: 100%;
+        .carousel-item{
+            img{
+                margin-left: 20%;
+                display: block;
+                width: 200px;
+            };
+            .carousel-caption{
+                width: 50%;
+                margin-left:30%
+            }
+        }
+    }
+}
+@include tablet(){
+    .side-product-desktop{
+        width: 100%;
+        .carousel-item{
+            img{
+                margin-left: 20%;
+                display: block;
+                width: 200px;
+            };
+            .carousel-caption{
+                width: 50%;
+                margin-left:30%
+            }
+        }
+    }
+}
+@include desktop(){
+    .side-product-desktop{
+        width: 100%;
+        .carousel-item{
+            img{
+                margin-left: 20%;
+                display: block;
+                width: 200px;
+            };
+            .carousel-caption{
+                width: 50%;
+                margin-left:30%
+            }
+        }
+    }
+}
+@include desktop1(){
+    .side-product-desktop{
+        width: 100%;
+        .carousel-item{
+            img{
+                margin-left: 20%;
+                display: block;
+                width: 200px;
+            };
+            .carousel-caption{
+                width: 50%;
+                margin-left:30%
+            }
+        }
+    }
+}

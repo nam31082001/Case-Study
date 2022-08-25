@@ -223,7 +223,43 @@
       "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-3.jpg"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "name": "SH7HD",
+      "price": "1250000",
+      "img": "https://linhkienstore.vn/plugins/responsive_filemanager/source/top%2020%20flycam%20gia%20re%202019/flycam-gia-re-SH7HD-7.jpg",
+      "checked": false,
+      "number": 1
+    },
+    {
+      "id": 2,
+      "name": "JJRC H68",
+      "price": "2000000",
+      "number": "11"
+    },
+    {
+      "id": 3,
+      "name": "Fujifilm X-A7",
+      "price": "10000000",
+      "img": "https://cdn.vjshop.vn/may-anh/bai-viet-tin-tuc/best-camera-for-entry-level/best-camera-for-entry-level-5.jpg",
+      "checked": true,
+      "number": 1
+    },
+    {
+      "id": 4,
+      "name": "Canon EOS M50",
+      "price": "10000000",
+      "number": "1",
+      "checked": true
+    },
+    {
+      "id": 6,
+      "name": " MJX Bugs 3H",
+      "price": "2350000",
+      "number": "1"
+    }
+  ],
   "FProduct": [
     {
       "id": 1,

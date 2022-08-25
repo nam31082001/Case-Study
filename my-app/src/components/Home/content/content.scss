@@ -439,9 +439,5 @@ $desktop-width1: 1100px;
 
     }
 
-    @include mobile() {
-        .side-product-desktop {
-            display: none;
-        }
-    }
+  
 }

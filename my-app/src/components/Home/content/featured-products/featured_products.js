@@ -33,27 +33,28 @@ const Featured_Product = () => {
 
     return (
         <>
-        <div style={{ width:'100', margin: 'auto' }} className="side-product-desktop">
-            <Carousel variant="dark">
-                {dataNew.map((item, index) => {
-                    return (
-                        <Carousel.Item>
-                            <img
-                                className="d-flex w-99"
-                                src={item.img}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h5 >{item.name}</h5>
-                                <h3>{item.price}</h3>
-                                <Example item={item} />
-                                <button  onClick={() => handleAddFly(item)}>Thêm Vào Giỏ</button>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    )
-                })}
-            </Carousel>
-        </div>
+            <div className="side-product-desktop">
+                <Carousel variant="dark">
+                    {dataNew.map((item, index) => {
+                        return (
+                            <Carousel.Item>
+                                <img
+                                    className="d-flex w-99"
+                                    src={item.img}
+                                    alt="First slide"
+                                />
+
+                                <Carousel.Caption>
+                                    <h5 >{item.name}</h5>
+                                    <h3>{item.price}</h3>
+                                    <Example item={item} />
+                                    <button onClick={() => handleAddFly(item)}>Thêm Vào Giỏ</button>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        )
+                    })}
+                </Carousel>
+            </div>
         </>
     )
 }
