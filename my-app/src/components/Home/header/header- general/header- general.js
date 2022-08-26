@@ -25,7 +25,7 @@ const Header_General = () => {
                 type: "GET_API_CART"
             }
         )
-    }, [])
+    }, [cart])
 
 
     const handleLogOut=()=>{
